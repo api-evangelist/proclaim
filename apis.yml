@@ -1,7 +1,28 @@
 aid: proclaim
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/proclaim.png
 name: Proclaim
-description: Proclaim is a company surfaced as a portfolio company of khosla-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Proclaim, built by Fresh Health, Inc., makes a custom-jet oral health system that
+  replaces traditional flossing with a 3D-scanned, custom-fitted mouthpiece that pulses
+  water through up to 60 jets to clean between teeth and below the gumline in about seven
+  seconds. The consumer device is clinically shown to reduce gum bleeding and plaque, and
+  is backed by Khosla Ventures. Proclaim is a direct-to-consumer oral-care hardware and
+  wellness brand; it publishes a marketing and e-commerce site, a dental-professional
+  portal, a help/knowledge center, and a blog, but exposes no public API, developer portal,
+  SDKs, or machine-readable specification. This profile was surfaced as a Khosla Ventures
+  portfolio lead and enriched with the identity and web properties the company actually
+  publishes plus a probed domain-security profile; there is no API surface to catalog.
 url: https://raw.githubusercontent.com/api-evangelist/proclaim/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Oral Health
+- Dental
+- Consumer Devices
+- Health Technology
+- Wellness
+- Direct to Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/proclaim-domain-security.yml
 - type: Website
   url: https://proclaimhealth.com/
+- type: Blog
+  url: https://proclaimhealth.com/blogs/the-fresh-take
+- type: Support
+  url: https://help.proclaimhealth.com/knowledge
+- type: HelpCenter
+  url: https://help.proclaimhealth.com/knowledge
+- type: TermsOfService
+  url: https://proclaimhealth.com/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://proclaimhealth.com/policies/privacy-policy
+- type: About
+  url: https://proclaimhealth.com/pages/about
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
